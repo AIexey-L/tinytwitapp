@@ -1,0 +1,14 @@
+<h1>Search in twitter</h1>
+
+<%= form_tag(searcher_index_path, method: :get) do %>
+    <%= text_field_tag :query, params[:query] %>
+    <%= submit_tag 'Search', name: nil %>
+<% end %>
+
+<ul>
+    <% if @tweets %>
+        <% @tweets.each do |tweet| %>
+            <li><span><%= tweet.text %></span>
+        <% end %>
+    <% end %>
+</ul>

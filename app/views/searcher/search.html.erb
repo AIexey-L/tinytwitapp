@@ -1,0 +1,6 @@
+<h1>Search in twitter</h1>
+
+<%= form_tag(searcher_search_path, method: :get) do %>
+    Twitter <%= text_field_tag :twitter, params[:twitter] %>
+    <%= submit_tag 'Search', name: nil %>
+<% end %>
