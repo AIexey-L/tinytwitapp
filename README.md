@@ -1,24 +1,15 @@
-# README
+# Sample app for searching in twitter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* clone repository, install gems (`bundle install`), start server (`rails s`)
 
-Things you may want to cover:
+* go to http://localhost:3000/searcher/index
 
-* Ruby version
+## Things to improve
 
-* System dependencies
+* Write validations for query(Make model for `client`, use validations in model-level. Or use Dry-validations.)
 
-* Configuration
+* Write tests
 
-* Database creation
+* Move keys to config
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Remove boilerplate code
