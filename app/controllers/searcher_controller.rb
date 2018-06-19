@@ -2,8 +2,8 @@ class SearcherController < ApplicationController
 
   def index
     client = Twitter::REST::Client.new do |config|
-      config.consumer_key    = 'l31I4jAJvWMnnBz2pLvHNadIj'
-      config.consumer_secret = 'NnGFqMiWMrvdwmAQHBstTdAU5CiGIDVFw3uoDdK78ipSmuQIn8'
+      config.consumer_key    = 'here should be consumer key'
+      config.consumer_secret = 'here should be consumer_secret'
     end
     @tweets = client.search(search_params, result_type: 'recent') if params[:query]
   end
