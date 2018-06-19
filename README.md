@@ -1,6 +1,6 @@
 # Sample app for searching in twitter
 
-* clone repository, install gems (`bundle install`), start server (`rails s`)
+* clone repository, install gems (`bundle install`), add keys form twitter api to `searcher_controller.rb`, start server (`rails s`)
 
 * go to http://localhost:3000/searcher/index
 
